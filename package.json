@@ -1,0 +1,7 @@
+{
+    "name": "StackoverflowLite", 
+    "version": "1.0.0", 
+    "keywords": ["util", "server", "client", "andela"], 
+    "author": "Wakeel Ogunsanya <wakeel.oguns at gmail.com>",
+    "contributors": [], "dependencies": {}
+}
