@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Add Question</title>
+        <title>Signup | Stack Overflow Lite</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div></div>
+        <div class="page-container ">
+            <section id="top">
+                <nav class="navigation">
+                    <ul>
+                        <li> <a  href="home.html">Home </a></li>
+                        <li> <a  href="ask.html">Ask Question </a></li>
+                    </ul>   
+                </nav>
+            </section>
+            <section class="main-content row">
+                <section class="col-m-9">    
+                    <h1 class="page-title">Ask Question</h1>
+                  
+                    <form>
+                    <div class="input-box">
+                        <textarea  class="input" cols="8" rows="8" placeholder="Type question"></textarea>
+                    </div>
+                    <p class="tags-box"></p>
+                    <div class="input-box">
+                        <input id="tags-input"  class="input" placeholder="Add tags" />
+                        <input  id="tags-input-hidden" type="hidden" name="tags" />
+                    </div>
+                      <div class="input-box right">
+                          <button class="btn">Post</button>
+                      </div>
+                    </form>
+                </section>
+                <aside class="col-m-3">
+                    <div class="widget">
+                        <h3 class="widget__title">Popular Tags</h3>
+                        <div class="widget__content">
+                            <ul class="tag-list">
+                                <li class="tag-list__item"><a href="?tag=php">PHP</a></li>
+                                <li class="tag-list__item"><a href="?tag=php">CSS</a></li>
+                                <li class="tag-list__item"><a href="?tag=python">PYTHON</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <section id="footer">
+                <p class="center">&COPY; 2018 Stack Overflow Lite</p>
+            </section>
+        </div>
+        <script>
+            
+            function showTags(tags, containerElement){
+                
+            }
+            document.getElementById('tags-input').addEventListener('keyup', function(e){
+                var key = e.key;
+                
+                if(key === ','){
+                   
+                }
+                
+            });
+    </script>
     </body>
 </html>
