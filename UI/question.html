@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Question Details</title>
+        <title>Signup | Stack Overflow Lite</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="page-container ">
+            <section id="top">
+                <nav class="navigation">
+                    <ul>
+                        <li> <a  href="home.html">Home </a></li>
+                        <li> <a  href="ask.html">Ask Question </a></li>
+                    </ul>   
+                </nav>
+            </section>
+            <section class="main-content row">
+                <section class="col-m-9 bordered">    
+                    <h1 class="page-title">How do i achieve something</h1>
+
+                    <div >
+
+                        I'm using git gpg signing. I want to disable it. I've set .gitconfig
+
+                        [user]
+                        name = NAME
+                        email = EMAIL
+                        signingkey = KEY
+                        ...
+                        [commit]
+                        gpgsign = false
+                        My commits are still signing by default.
+
+                        PS: I also disabled from Sourcetree Repository/ Repository Settings/Security tab. Both Sourcetree and terminal forces to use gpg.
+                    </div>
+                    <div class="input-box">
+                        <textarea  class="input" cols="8" rows="8" placeholder="Type an answer"></textarea>
+                    </div>
+                    <div class="input-box right">
+                        <button class="btn">Post</button>
+                    </div>
+                    <div class="">
+                        <h3>2 Answers</h3>
+                         <div class="list">
+                        <div class="list__item">
+                            <div class="list__item__content">
+                               
+                                <div class="list__item__content__center"> 
+                                   Please how can i create a responsive website without using any framework 
+                                </div>
+                                <div class="list__item__content__right right">
+                                    <a class="" >Accept</a>
+                                </div>
+                            </div>
+                            <div class="list__item__footer ">
+                              
+                                <div class="d-flex">
+                                    <div>John Doe</div>
+                                    <div><strong>09 Sep </strong></div>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="list__item">
+
+                            <div class="list__item__content">
+                                <div class="list__item__content__center">To temporarily disable GPG signing for the next commit:
+
+git -c commit.gpgsign=false commit</div>
+                                <div class="list__item__content__right">
+                                    <!--                                   Up Votes-->
+                                </div>
+                            </div>
+                            <div class="list__item__footer ">
+                             
+                                <div class="d-flex">
+                                    <div>John Doe</div>
+                                    <div><strong>09 Sep </strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <aside class="col-m-3">
+                    <div class="widget">
+                        <h3 class="widget__title">Popular Tags</h3>
+                        <div class="widget__content">
+                            <ul class="tag-list">
+                                <li class="tag-list__item"><a href="?tag=php">PHP</a></li>
+                                <li class="tag-list__item"><a href="?tag=php">CSS</a></li>
+                                <li class="tag-list__item"><a href="?tag=python">PYTHON</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="widget">
+                        <h3 class="widget__title">Recent Questions</h3>
+                        <div class="widget__content">
+                            <ul class="list-unstyled">
+                                <li class=""><a href="question.html">How to two</a></li>
+                                <li class=""><a href="question.html">How to three</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <section id="footer">
+                <p class="center">&COPY; 2018 Stack Overflow Lite</p>
+            </section>
+        </div>
     </body>
 </html>
